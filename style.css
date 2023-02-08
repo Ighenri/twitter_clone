@@ -5,38 +5,125 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: rgb(187, 147, 147);
-  /*   background-color: rgba(0, 0, 0); */
+    background-color: rgba(0, 0, 0);
 }
 body{
     display: flex;
     justify-content: space-between !important;
 }
+
+
+                        /* ASIDE LEFT BAR */
 .aside-left{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
-    width: 340px;
-    background-color: aliceblue;
+    width: 26%;
 
+}
+
+#twitter{
+    padding-top: 1rem;
+    font-size: 1.7rem;
+    user-select: none;
+
+}
+#twitter:hover{
+    background-color: none;
 }
 .aside-icon{
     display: flex;
-    
-
+  padding-bottom: 1.8rem;
+ color: rgb(224, 213, 213);
+ font-weight: thin;
+ outline-width: 1px;
 }
 .aside1{
-    padding-left: 5rem;
-    
+    padding-left: 8rem;
+    align-items: center;
+    padding-bottom: 3rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* .aside-icon:hover{
+    background-color: rgb(190, 184, 184);
+    border-radius: 50px;
+    width: 12rem;
+
+} */
+
+i{
+    padding-right: 1.3rem;
+   /*  color: white; */
+}
+
+.aside2{
+    padding-top: 1rem;
+    padding-left: 7rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+   color:  rgb(224, 213, 213);
+   user-select: none;
 }
 
 .profile-cont img{
-    width: 1.4rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    margin-right: 1rem;
 }
+
+.centre{
+    margin-right: 1.4rem;
+}
+
+.aside-btn button{
+    padding: .6rem 4.5rem;
+    border-radius: 35px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgb(29, 155, 240);
+    border-color: rgba(29, 155, 240);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.unique-name{
+    color: rgb(141, 131, 131);
+}
+
+
+#notify{
+position: relative;
+}
+
+.number{
+position: absolute;
+top: 0;
+background-color:  rgba(29, 155, 240);
+width: 20px;
+padding: 1px 1px 1px 6px ;
+border-radius: 70%;
+top: 13.7rem;
+font-size: 14px;
+height: 1rem;
+right: 12.6rem;
+color: white;
+border: none;
+}
+
+
+
+
+
+
+
+
+
 
 
 .nav{

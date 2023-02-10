@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/b6b472ab99.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="trending.css">
-    <link rel="stylesheet" href="main.css">
     <title>Twitter clone</title>
 </head>
+
 <body>
     <div class="container">
         <!-- LEFT SECTIOM -->
@@ -76,7 +75,7 @@
        <!--  MIDDLE SECTION -->
         <div class="main">
             
-            <div class="nav">
+            <!-- <div class="nav"> -->
                 <div class="home">Home</div> 
                 <div class="header">
                     <ul>
@@ -85,7 +84,7 @@
                         <li><a href="#">Developers</a></li>
                     </ul>
                 </div>
-            </div>
+            <!-- </div> -->
             
             <br>
             <div class="mybox">
@@ -107,13 +106,15 @@
 
        <!--  RIGHT SECTION -->
         <div class="aside-right">
-                <div class="search-cont">
-                        <button>
+               
+                    <form class="search-bar" action="https://www.twitter.com/search" method="get">
+                        <button type="submit">
                             <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
                         </button>
                         
-                        <input class="search-box" type="text" name="word" id="text">
-                </div>
+                        <input class="search-box" type="text" name="word" id="text" placeholder="Search Twitter">
+                    </form>
+                        
         
                 <div class="middle-aside-right">
                     <h3>Trends for you</h3>

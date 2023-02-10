@@ -6,17 +6,21 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{
-    overflow-y: scroll;
-}
+
 .container{
     display: flex;
     justify-content: space-between;
     
 }
 
+body{
+    position: fixed;
+    background-color: rgba(0, 0, 0);
+    overflow: hidden;
+}
 
-                        /* ASIDE LEFT BAR */
+ /* =========================================================================================ASIDE LEFT ===================================
+====================================================================================================== */
 
 #twitter{
     padding-top: 1rem;
@@ -41,10 +45,11 @@ body{
     padding-bottom: 3rem;
     font-size: 1.2rem;
     cursor: pointer;
+   
 }
 .aside-left{
     z-index: 1000;
- 
+    width: 28%;
 }
 
 
@@ -108,8 +113,198 @@ color: white;
 border: none;
 } */
 
+/* ========================================================================================= MAIN  ===================================
+====================================================================================================== */
+
+.main{
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    width: 44%;
+    overflow-y: scroll;
+}
+/* .nav{
+    display: flex; 
+    position: fixed;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-items: first baseline;
+    flex-direction: column;
+   color: white;
+   background-color: red;
+
+} */
+
+.home{
+    margin : .5rem 1rem 1.3rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 1px;    
+}
+.header{
+    /* width:100%; */
+}
+.header ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    font-size: 1rem;
+    margin: 0 auto;
+}
+.header ul li{
+    list-style: none;
+}
+.header ul li a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    padding: 8px 30px;
+    color: white;
+}
+.header ul li a:hover{
+    background-color: rgba(49, 46, 46, .5);
+}
+
+.mybox{
+    display: flex;
+    
+}
+.myimg{
+    width: 3rem;
+    border-radius: 50%;
+
+}
+textarea{
+    color: white;
+    font-size: 1rem;
+    border-color: rgba(29, 155, 240);
+
+  
+}
+
+textarea::placeholder{
+    font-size: 1.2rem;
+   padding: 10px;
+   
+
+}
+
+/* =========================================================================================ASIDE RIGHT ===================================
+====================================================================================================== */
 
 
 
+.aside-right{
+    width: 28%;
+    height: 100vh;
+   /*  display: flex;
+    flex-direction: column; */
+    overflow-y: scroll;
+    padding: 1rem;
+}
+.aside-right::-webkit-scrollbar{
+    width: 10px;
+}
+
+.aside-right::-webkit-scrollbar-track{
+    background-color: white;
+}
+
+.aside-right::-webkit-scrollbar-thumb{
+    background: blue;
+}
+
+.search-bar{
+    width: 100%;
+    max-width: 700px;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.search-bar input{
+    background: transparent;
+    flex: 1;
+    outline: none;
+    border: none;
+
+}
+.search-bar button{
+    border: 0;
+    background: transparent;
+    display: flex;
+    align-items: center;
+}
+
+.search-cont:focus-within{
+    outline: 1px solid red;
+}
+.search button{
+    margin-left: 5px;
+    width: 30px;
+ /*    margin-right: -9px; */
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    
+}
+
+.search-box{
+    padding-right: 9rem;
+    border-radius: 100px;
+    margin-left: -2px;
+    
+  
+}
+
+.middle-aside-right{
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    background-color: purple;
+/*     margin: .3rem 1.5rem; */
+    
+}
+
+.middle-aside-right h3{
+    color: rgb(231,233,234);
+    padding-bottom: .9rem;
+    padding: .3rem 1.3rem 0 ;
+}
+
+.trend-cont{
+    display: flex;
+    justify-content: space-between;
+    padding: .3rem 1.5rem;
+    
+}
+
+.flex{
+    margin-bottom: 10px;
+}
+
+.flex .trends{
+    color: rgb(231,233,234);
+}
+.statistics,
+.title{
+    font-size: .9rem;
+    color: rgb(82,86,91);
+}
+
+.dots{
+    color: white;
+}
+
+.follow-cont{
+    background-color: blue;
+    margin-top: 1rem;
+    border-radius: 1rem;
+}
 
 

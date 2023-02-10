@@ -5,25 +5,18 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: rgba(0, 0, 0);
 }
 body{
+    overflow-y: scroll;
+}
+.container{
     display: flex;
-    justify-content: space-between !important;
+    justify-content: space-between;
+    
 }
 
 
                         /* ASIDE LEFT BAR */
-.aside-left{
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 26%;
-
-}
 
 #twitter{
     padding-top: 1rem;
@@ -36,34 +29,33 @@ body{
 }
 .aside-icon{
     display: flex;
-  padding-bottom: 1.8rem;
- color: rgb(224, 213, 213);
- font-weight: thin;
- outline-width: 1px;
+    padding-bottom: 1.8rem;
+    color: rgb(224, 213, 213);
+    font-weight: thin;
+    outline-width: 1px;
+
 }
 .aside1{
-    padding-left: 8rem;
+    padding-left: 5rem;
     align-items: center;
     padding-bottom: 3rem;
     font-size: 1.2rem;
     cursor: pointer;
 }
+.aside-left{
+    z-index: 1000;
+ 
+}
 
-/* .aside-icon:hover{
-    background-color: rgb(190, 184, 184);
-    border-radius: 50px;
-    width: 12rem;
-
-} */
 
 i{
     padding-right: 1.3rem;
-   /*  color: white; */
+  
 }
 
 .aside2{
     padding-top: 1rem;
-    padding-left: 7rem;
+    padding-left: 5rem;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -97,7 +89,7 @@ i{
 }
 
 
-#notify{
+/* #notify{
 position: relative;
 }
 
@@ -111,71 +103,13 @@ border-radius: 70%;
 top: 13.7rem;
 font-size: 14px;
 height: 1rem;
-right: 12.6rem;
+right: 15.6rem;
 color: white;
 border: none;
-}
+} */
 
 
 
 
 
 
-
-
-
-
-
-.nav{
-    display: flex; 
-    flex-direction: column;
-   color: white;
-}
-
-.home{
-    margin : .5rem 1rem 1.3rem;
-    font-weight: bold;
-    font-size: 1.2rem;
-    letter-spacing: 1px;    
-}
-
-.header ul{
-    display: flex;
-    justify-content: space-around;
-    font-size: 1rem;
-}
-.header ul li{
-    list-style: none;
-}
-.header ul li a{
-    text-decoration: none;
-    padding: 8px 30px;
-    color: white;
-}
-.header ul li a:hover{
-    background-color: rgba(49, 46, 46, .5);
-}
-
-.mybox{
-    display: flex;
-    
-}
-.myimg{
-    width: 3rem;
-    border-radius: 50%;
-
-}
-textarea{
-    color: white;
-    font-size: 1rem;
-    border-color: rgba(29, 155, 240);
-
-  
-}
-
-textarea::placeholder{
-    font-size: 1.2rem;
-   padding: 10px;
-   
-
-}

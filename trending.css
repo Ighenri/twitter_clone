@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    font-family: Roboto, Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+body{
+    background-color: black;
+}
+.aside-right{
+  /*  */
+    background-color: rgba(0, 0, 0);
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(22,24,28);
+    overflow-y: scroll;
+}
+
+.search-cont{
+    border-radius: 100px;
+    width: 200px;
+    margin-bottom: 3rem;
+    display: flex;
+    margin-bottom: 5rem;
+   
+}
+.search-cont:focus-within{
+    outline: 1px solid red;
+}
+.search button{
+    margin-left: 5px;
+    width: 30px;
+    margin-right: -9px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    
+}
+
+.search-box{
+    padding-right: 9rem;
+    border-radius: 100px;
+    margin-left: -2px;
+    
+  
+}
+
+.middle-aside-right{
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+/*     margin: .3rem 1.5rem; */
+    
+}
+
+.middle-aside-right h3{
+    color: rgb(231,233,234);
+    padding-bottom: .9rem;
+    padding: .3rem 1.3rem 0 ;
+}
+
+.trend-cont{
+    display: flex;
+    justify-content: space-between;
+    padding: .3rem 1.5rem;
+    
+}
+
+.flex{
+    margin-bottom: 10px;
+}
+
+.flex .trends{
+    color: rgb(231,233,234);
+}
+.statistics,
+.title{
+    font-size: .9rem;
+    color: rgb(82,86,91);
+}
+
+.dots{
+    color: white;
+}

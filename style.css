@@ -120,13 +120,15 @@ border: none;
     display: flex;
     flex-direction: column;
     width: 44%;
-    /* overflow-y: scroll; */
+    cursor: pointer;
+    overflow-y: scroll;
+    height: 100vh;
     border-left: .2rem solid  rgb(32,35,39);
     border-right: .2rem solid  rgb(32,35,39);
     /* background-color: blueviolet; */
 }
-/* .main::-webkit-scrollbar{
-    width: 41%
+.main::-webkit-scrollbar{
+    width: 10px
 }
 
 .main::-webkit-scrollbar-track{
@@ -136,21 +138,8 @@ border: none;
 .main::-webkit-scrollbar-thumb{
     background: rgba(29, 155, 240);
 
-} */
+}
 
-
-
-/* .nav{
-    display: flex; 
-    position: fixed;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    align-items: first baseline;
-    flex-direction: column;
-   color: white;
-   background-color: red;
-
-} */
 
 .home{
     margin : .5rem 1rem 1.3rem;
@@ -206,7 +195,6 @@ border: none;
     font-size: 1rem;
     font-weight: 400;
     border: .1rem solid  rgba(75, 70, 70, 0.5);
-    ;
 }
 .audience button span{
     padding-left: .5rem;
@@ -269,6 +257,74 @@ textarea::placeholder{
     border-bottom: .2rem solid  rgb(32,35,39);
     color:  rgba(29, 155, 240);
 }
+#contents{
+    display: flex;
+    color: white;
+    border-bottom: .1rem solid  rgba(75, 70, 70, 0.5);
+    padding-bottom: .5rem;
+}
+
+.logo img{
+    width: 3rem;
+    margin: .3rem 0 0 1rem;
+    border-radius: 2rem;
+}
+.line1{
+    display: flex;
+   align-items: center;
+   padding: .2rem  1rem;
+}
+.line1 a{
+    color: white;
+    text-decoration: none;
+}
+.line1 p{
+    padding: 0 .4rem 0 0;
+    text-align: justify;
+}
+#new4{
+    padding-left: 15rem;
+}
+#new1,
+#new2,
+#new5{
+    padding-left: 10rem;
+}
+
+#new3{
+    padding-left: 5rem;
+}
+
+.line2{
+    padding: .2rem  1rem;
+    align-items: center;
+}
+
+.line3{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.react{
+    text-decoration: none !important;
+    color: rgb(121, 107, 107);
+    background: none;
+    display: flex;
+    align-items: center;
+    border: none;
+}
+.react:hover{
+    color: rgb(145, 137, 137);
+}
+.react i{
+    transition: .3s;
+    font-size: 1rem;
+    padding: .5rem;
+}
+.insert img{
+    width: 24px;
+}
 
 /* =========================================================================================ASIDE RIGHT ===================================
 ====================================================================================================== */
@@ -305,7 +361,7 @@ textarea::placeholder{
     border-radius: 1rem;
     padding: 1rem;
     margin-bottom: 1rem;
-
+    /* position: fixed; */
     
 }
 .search-bar:focus-within{
@@ -489,3 +545,4 @@ text-decoration: none;
     color:rgb(100, 100, 114);
     
 }
+

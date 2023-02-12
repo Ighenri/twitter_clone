@@ -138,11 +138,7 @@ border: none;
 
 } */
 
-.icons{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+
 
 /* .nav{
     display: flex; 
@@ -221,27 +217,18 @@ border: none;
     outline: none;
     border: none;
     background: transparent;
-    padding-top: 1rem;
     color: white;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 .myimg{
     width: 3rem;
     border-radius: 50%;
 
 }
-/* textarea{
-    color: white;
-    font-size: 1rem;
-    border-color: rgba(29, 155, 240);
-   
-  
-} */
-
 
 textarea::placeholder{
     font-size: 1.2rem;
-    padding: 10px;
+    padding-top: 1rem;
     
     
 }
@@ -259,10 +246,12 @@ textarea::placeholder{
     padding-bottom: 1rem;
     border-bottom: .2rem solid rgb(32,35,39);
 }
-
 .icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     color:  rgba(29, 155, 240);
-    padding: 1rem;
+    padding: .5rem;
     background: transparent;
 
 }
@@ -274,6 +263,13 @@ textarea::placeholder{
    color: rgb(228, 215, 215);
    font-weight: bold;
 }
+.show-tweet{
+    text-align: center;
+    padding: 1rem;
+    border-bottom: .2rem solid  rgb(32,35,39);
+    color:  rgba(29, 155, 240);
+}
+
 /* =========================================================================================ASIDE RIGHT ===================================
 ====================================================================================================== */
 

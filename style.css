@@ -37,7 +37,7 @@ body{
     color: rgb(224, 213, 213);
     font-weight: thin;
     outline-width: 1px;
-
+  
 }
 .aside1{
     padding-left: 5rem;
@@ -119,11 +119,30 @@ border: none;
 .main{
     display: flex;
     flex-direction: column;
-    background-color: aqua;
     width: 44%;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
+    border-left: .2rem solid  rgb(32,35,39);
+    border-right: .2rem solid  rgb(32,35,39);
+    /* background-color: blueviolet; */
+}
+/* .main::-webkit-scrollbar{
+    width: 41%
 }
 
+.main::-webkit-scrollbar-track{
+    background-color: white;
+}
+
+.main::-webkit-scrollbar-thumb{
+    background: rgba(29, 155, 240);
+
+} */
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 /* .nav{
     display: flex; 
@@ -143,8 +162,10 @@ border: none;
     font-size: 1.2rem;
     letter-spacing: 1px;    
 }
-.header{
-    /* width:100%; */
+
+
+.you{
+ border-bottom: .3rem solid  rgba(29, 155, 240);
 }
 .header ul{
     display: flex;
@@ -153,6 +174,7 @@ border: none;
     background-color: black;
     font-size: 1rem;
     margin: 0 auto;
+    border-bottom: .2rem solid  rgb(32,35,39);
 }
 .header ul li{
     list-style: none;
@@ -169,30 +191,89 @@ border: none;
     background-color: rgba(49, 46, 46, .5);
 }
 
+.pic-container{
+    padding-right: 1rem;
+    padding-left: .7rem;
+}
+
 .mybox{
-    display: flex;
-    
+    width: 100%;
+   
+}
+
+.audience button{
+    background: transparent;
+    color: rgba(29, 155, 240);
+    padding: .5rem .4rem .5rem .6rem;
+    border-radius: 1rem;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 400;
+    border: .1rem solid  rgba(75, 70, 70, 0.5);
+    ;
+}
+.audience button span{
+    padding-left: .5rem;
+}
+
+.happening textarea{
+    width: 100%;
+    outline: none;
+    border: none;
+    background: transparent;
+    padding-top: 1rem;
+    color: white;
+    font-size: 1.3rem;
 }
 .myimg{
     width: 3rem;
     border-radius: 50%;
 
 }
-textarea{
+/* textarea{
     color: white;
     font-size: 1rem;
     border-color: rgba(29, 155, 240);
-
+   
   
-}
+} */
+
 
 textarea::placeholder{
     font-size: 1.2rem;
-   padding: 10px;
-   
+    padding: 10px;
+    
+    
+}
+
+.hidden{
+    display: flex;
+    border-bottom: .2rem solid rgb(32,35,39);
+}
+
+.everyone{
+    color: rgba(29, 155, 240);
+    font-size: 1rem ;
+    text-align: start;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: .2rem solid rgb(32,35,39);
+}
+
+.icons{
+    color:  rgba(29, 155, 240);
+    padding: 1rem;
+    background: transparent;
 
 }
 
+.main-btn button{
+    padding: .7rem 1rem;
+    border-radius: 1.3rem;
+   background-color:  rgba(29, 155, 240);
+   color: rgb(228, 215, 215);
+   font-weight: bold;
+}
 /* =========================================================================================ASIDE RIGHT ===================================
 ====================================================================================================== */
 

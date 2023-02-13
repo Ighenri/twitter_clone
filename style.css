@@ -39,6 +39,11 @@ body{
     outline-width: 1px;
   
 }
+.create{
+    display: none;
+    width: 5rem;
+    color: rgb(224, 213, 213);
+}
 .aside1{
     padding-left: 5rem;
     align-items: center;

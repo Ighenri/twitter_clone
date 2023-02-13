@@ -122,10 +122,12 @@ border: none;
     width: 44%;
     cursor: pointer;
     overflow-y: scroll;
+    overflow-x: hidden;
     height: 100vh;
     border-left: .2rem solid  rgb(32,35,39);
     border-right: .2rem solid  rgb(32,35,39);
     /* background-color: blueviolet; */
+    
 }
 .main::-webkit-scrollbar{
     width: 10px
@@ -145,21 +147,35 @@ border: none;
     margin : .5rem 1rem 1.3rem;
     font-weight: bold;
     font-size: 1.2rem;
-    letter-spacing: 1px;    
+    letter-spacing: 1px;
+    color: white;  
+    z-index: 2000; 
 }
 
 
 .you{
  border-bottom: .3rem solid  rgba(29, 155, 240);
 }
+
 .header ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.658);
     font-size: 1rem;
     margin: 0 auto;
     border-bottom: .2rem solid  rgb(32,35,39);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 42%;
+    height: 7rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    backdrop-filter: blur(10px);  /* BACKDROP-FILTER */
+    z-index: 1000;
+    box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+   
 }
 .header ul li{
     list-style: none;
@@ -185,8 +201,14 @@ border: none;
     width: 100%;
    
 }
+.mybox:focus-within .audience
 
-.audience button{
+
+.new-update{
+    display: none;
+}
+.new-update button{
+    display: none;
     background: transparent;
     color: rgba(29, 155, 240);
     padding: .5rem .4rem .5rem .6rem;
@@ -195,6 +217,9 @@ border: none;
     font-size: 1rem;
     font-weight: 400;
     border: .1rem solid  rgba(75, 70, 70, 0.5);
+}
+.mybox:focus-within .new-update button{
+    display: block;
 }
 .audience button span{
     padding-left: .5rem;
@@ -224,6 +249,7 @@ textarea::placeholder{
 .hidden{
     display: flex;
     border-bottom: .2rem solid rgb(32,35,39);
+    padding-top: 3rem;
 }
 
 .everyone{
@@ -232,7 +258,18 @@ textarea::placeholder{
     text-align: start;
     padding-left: 1rem;
     padding-bottom: 1rem;
-    border-bottom: .2rem solid rgb(32,35,39);
+    display: none;
+}
+.mybox:focus-within .everyone{
+    display: block;
+}
+.border{
+    border-bottom: 2px  solid rgb(32,35,39);
+    display: none;
+
+}
+.mybox:focus-within .border{
+    display: block;
 }
 .icons{
     display: flex;
@@ -333,11 +370,14 @@ textarea::placeholder{
 
 .aside-right{
     width: 28%;
-    height: 100vh;
+    /* height: 100vh; */
    /*  display: flex;
     flex-direction: column; */
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     padding: 1rem;
+    overflow-x: hidden;
+    position: relative;
+    background-color: black;
 }
 .aside-right::-webkit-scrollbar{
     width: 10px;
@@ -361,7 +401,11 @@ textarea::placeholder{
     border-radius: 1rem;
     padding: 1rem;
     margin-bottom: 1rem;
-    /* position: fixed; */
+   
+ 
+
+   
+   
     
 }
 .search-bar:focus-within{
@@ -379,6 +423,7 @@ textarea::placeholder{
     border: none;
     color: white;
     font-size: 1rem;
+
 }
 
 .search-bar button{
@@ -410,17 +455,32 @@ textarea::placeholder{
     
   
 }
-
 .middle-aside-right{
+    background-color: black;
+    height: 89vh;
+    overflow-y: scroll;
+}
+.middle-aside-cont{
     display: flex;
     flex-direction: column;
     border-radius: 1rem;
     background-color:rgb(32,35,39);
     margin-right: 1rem;
-    
+}
+.middle-aside-right::-webkit-scrollbar{
+    width: 10px;
 }
 
-.middle-aside-right h3{
+.middle-aside-right::-webkit-scrollbar-track{
+    background-color: white;
+}
+
+.middle-aside-right::-webkit-scrollbar-thumb{
+    background: rgba(29, 155, 240);
+
+}
+
+.middle-aside-cont h3{
     color: rgb(231,233,234);
     padding-bottom: .9rem;
     padding: .3rem 1rem 0 ;
@@ -470,7 +530,8 @@ textarea::placeholder{
     background-color:rgb(32,35,39);
     margin-top: 1rem;
     border-radius: 1rem;
-    padding: 1rem 1rem;
+    padding: 1rem .5rem;
+    margin-right: 1rem;
 }
 .follow-cont h3{
     color: white;

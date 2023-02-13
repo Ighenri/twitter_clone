@@ -150,6 +150,7 @@ border: none;
     letter-spacing: 1px;
     color: white;  
     z-index: 2000; 
+    position: fixed;
 }
 
 
@@ -249,7 +250,7 @@ textarea::placeholder{
 .hidden{
     display: flex;
     border-bottom: .2rem solid rgb(32,35,39);
-    padding-top: 3rem;
+    padding-top: 7rem;
 }
 
 .everyone{

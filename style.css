@@ -399,7 +399,7 @@ textarea::placeholder{
 }
 
 .search-bar{
-    width: 98%;
+    width: 90%;
     max-width: 700px;
     background-color: rgb(32,35,39);
     display: flex;
@@ -612,4 +612,165 @@ text-decoration: none;
     color:rgb(100, 100, 114);
     
 }
+
+@media (max-width:1300px) {
+
+    .aside-left{
+        width: 10%;
+        
+    }
+    
+    .aside-icon{
+        width: 10%;
+        padding-bottom: 1.6rem;
+    }
+
+    .aside-icon div{
+        display: none;
+    }
+
+    .aside-btn{
+        display: none;
+    }
+    .aside2{
+        padding-top: 0rem;
+     
+    }
+    .profile-cont img{
+        margin-left: -1rem;
+    }
+    .centre,
+    .dot{
+        display: none;
+    }
+    .create{
+       display: block;
+       margin-left: -2rem;
+        
+    }
+    .create img{
+        width: 5rem;
+    }
+    .main{
+        width: 60%;
+    }
+    .header ul{
+        width: 58%;
+    }
+   .aside-right{
+    width: 30%;
+   }
+   
+   .img-cont img{
+    width: 2rem;
+   }
+   .follow-btn{
+    padding: .2rem .5rem;
+    font-weight: 400;
+   }
+   .padding1{
+    padding-right: .4rem;
+}
+.padding2{
+    padding-right: 4.5rem;
+ 
+}
+.padding3{
+    padding-right: 2rem;
+}
+   .name{
+    font-size: .8rem;
+   }
+
+   .show-more2{
+    padding: .3rem .1rem;
+   }
+   .links{
+   padding-left: .5rem;
+   }
+   .links a{
+    padding-left: 0.15rem;
+
+   }
+
+}
+
+
+@media (max-width:1000px) {
+    .aside-right{
+        display: none;
+    }
+    .aside-left{
+        width: 20%;
+    }
+     .aside-icon{
+        width: 20%;
+      
+    }
+    .main{
+        width: 80%;
+    }
+    .header ul{
+        width: 78%;
+    }
+}
+
+@media (max-width:750px) {
+  .logo img{
+    width: 1.5rem;
+  }
+
+  .line1{
+    padding: .2rem .5rem;
+  }
+
+  #contents{
+    font-size: 1rem;
+  }
+
+}
+
+@media (max-width:710px) {
+    .logo img{
+      width: 1.5rem;
+    }
+  
+    .line1{
+      padding: .2rem .5rem;
+    }
+  
+    #contents{
+      font-size: .7rem;
+    }
+    .unique-name{
+        font-size: .5rem ;
+    }
+    
+  
+  }
+
+  @media (max-width:499px) {
+    
+.aside-left{
+    display: none;
+}
+.home{
+    display: none;
+}
+.header ul{
+    font-size: .5rem;
+   width: 92%;
+}
+
+
+
+
+
+
+
+
+
+
+
+  }
 

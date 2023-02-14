@@ -1,3 +1,15 @@
-@media (max-width:499px) {
+@media (max-width:1200px) {
+    .aside-left{
+        width: 18%;
+    }
     
+    .aside-icon{
+        width: 18%;
+    }
+
+    .aside-icon div{
+        display: none;
+    }
+
+
 }

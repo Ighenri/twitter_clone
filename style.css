@@ -784,11 +784,11 @@ text-decoration: none;
     padding-right: .5rem;
 }
 .packages{
-    width: 100%;
+    width: 90%;
 }
 .logo img{
-    width: 3.5rem;
-    padding: .3rem .5rem;
+    width: 3rem;
+    padding: .3rem .1rem;
     /* margin: 1rem; */
    
 }

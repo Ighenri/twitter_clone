@@ -785,6 +785,7 @@ text-decoration: none;
 }
 .packages{
     width: 90%;
+    padding: auto;
 }
 .logo img{
     width: 3rem;
@@ -803,28 +804,29 @@ text-decoration: none;
 
 .line2{
     padding: 0;
-    width: 70%;
+    width: 50%;
     font-size: .8rem;
    line-height: 1rem;
-    word-wrap: normal;
     text-align: justify;
 }
 #new1,
 #new2,
 #new5{
     padding-left: 0;
+    display: none;
 }
 
 #new3{
     padding-left: 0;
+    display: none;
 }
 
 .reduce{
-    width: 70%;
+    width: 50%;
     
 }
 .line3{
-    width: 70%;
+    width: 50%;
 }
 
 .show-tweet{

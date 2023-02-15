@@ -778,14 +778,16 @@ text-decoration: none;
 }
 
 #contents{
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
     padding-top: .2rem;
     justify-content: space-around;
     padding-right: .5rem;
+    height: 100vh;
 }
 .packages{
     width: 90%;
     padding: auto;
+   
 }
 .logo img{
     width: 3rem;
@@ -804,7 +806,7 @@ text-decoration: none;
 
 .line2{
     padding: 0;
-    width: 50%;
+    width: 60%;
     font-size: .8rem;
    line-height: 1rem;
     text-align: justify;
@@ -822,11 +824,11 @@ text-decoration: none;
 }
 
 .reduce{
-    width: 50%;
+    width: 60%;
     
 }
 .line3{
-    width: 50%;
+    width: 60%;
 }
 
 .show-tweet{

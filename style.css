@@ -835,6 +835,10 @@ text-decoration: none;
     width: 80%;
 }
 
+body{
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
 
 
 

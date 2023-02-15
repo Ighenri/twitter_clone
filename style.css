@@ -782,7 +782,7 @@ text-decoration: none;
     padding-top: .2rem;
     justify-content: space-around;
     padding-right: .5rem;
-    height: 100vh;
+    height: 88vh;
 }
 .packages{
     width: 90%;
@@ -809,7 +809,7 @@ text-decoration: none;
     width: 60%;
     font-size: .8rem;
    line-height: 1rem;
-    text-align: justify;
+    text-align:left;
 }
 #new1,
 #new2,

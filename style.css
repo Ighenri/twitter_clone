@@ -295,6 +295,8 @@ textarea::placeholder{
    font-weight: bold;
 }
 .show-tweet{
+    display: flex;
+    justify-content: center;
     text-align: center;
     padding: 1rem;
     border-bottom: .2rem solid  rgb(32,35,39);
@@ -337,7 +339,11 @@ textarea::placeholder{
 #new3{
     padding-left: 5rem;
 }
-
+.reduce{
+    width: 90%;
+    border-radius: 1rem;
+    margin-left: 1rem`;
+}
 .line2{
     padding: .2rem  1rem;
     align-items: center;
@@ -749,7 +755,7 @@ text-decoration: none;
   
   }
 
-  @media (max-width:499px) {
+ @media (max-width:499px) {
     
 .aside-left{
     display: none;
@@ -759,14 +765,71 @@ text-decoration: none;
 }
 .header ul{
     font-size: .5rem;
-   width: 92%;
+   width: 100%;
 }
 
+.hidden{
+    display: none;
+}
+.main{
+    padding-top: 5rem;
+    width: 100%;
+    
+}
 
+#contents{
+    padding-bottom: 1rem;
+    padding-top: .2rem;
+    justify-content: space-around;
+    padding-right: .5rem;
+}
+.packages{
+    width: 100%;
+}
+.logo img{
+    width: 3.5rem;
+    padding: .3rem .5rem;
+    /* margin: 1rem; */
+   
+}
+.line1{
+    padding: 0 .4rem;
+    /* display: block; */
+}
 
+.line1 p{
+   padding: 0 .4rem;
+}
 
+.line2{
+    padding: 0;
+    width: 70%;
+    font-size: .8rem;
+   line-height: 1rem;
+    word-wrap: normal;
+    text-align: justify;
+}
+#new1,
+#new2,
+#new5{
+    padding-left: 0;
+}
 
+#new3{
+    padding-left: 0;
+}
 
+.reduce{
+    width: 70%;
+    
+}
+.line3{
+    width: 70%;
+}
+
+.show-tweet{
+    width: 80%;
+}
 
 
 

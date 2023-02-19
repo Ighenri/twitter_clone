@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/b6b472ab99.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="shortcut icon" href="img/images.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>Home/Twitter</title>
 </head>
 
-<body>
+<body id="body">
     <div class="container">
         <div class="cont-sub">
                                                                 <!-- LEFT SECTIOM -->
@@ -24,7 +25,8 @@
                             <div>Home</div>
                         </div>
                         <div class="aside-icon">
-                            <i class="fa-solid fa-hashtag"></i>
+                            <i class="fa-solid fa-hashtag hashtag"></i>
+                            <i class="fa-solid fa-magnifying-glass none_search"></i>
                             <div> Explore </div>
                         </div>
                         <div class="aside-icon">
@@ -51,12 +53,22 @@
                             <i class="fa-sharp fa-solid fa-circle-info"></i>
                             <div> More </div>
                         </div>
-                        <div class="aside-icon">
-                            <a href="#"  class="create">
-                                <img src="img/create.png" alt="">
+
+                        <span style="display: block;">
+                            <a href="#" class="none">
+                                <img src="img/create.png" width="80">
                             </a>
-                        
-                        </div>  
+                            <a href="#" class="tweet_btn">
+                                Tweet</a>
+                        </span>
+                        <!-- <div class="aside-icon">
+                            <a href="#" class="desktop-tweet">
+                                <button style="border-radius: 50px;">Tweet</button>
+                            </a>
+                            <a  href="#"  class="create">
+                                <img width="120" style="border-radius: 50px;" src="img/create.png" alt="img">
+                            </a>
+                        </div>   -->
                     </div>
 
 
@@ -80,21 +92,21 @@
                                 <!--  MIDDLE SECTION -->
 
                 <div class="main">
-                    <div class="nav">
-                        <h3 class="home">Home</h3>
-                    </div>
-                    <div class="header">
-                        <ul>
-                            <li class="you">
-                                <a href="#">For You</a>
-                            </li>
-                            <li>
-                                <a href="#">Following</a>
-                            </li>
-                            <li>
-                                <a href="#">Developers</a>
-                            </li>
-                        </ul>
+                    <div class="post-heading">
+                        <a class="twitter_logo_" style="color: #1d7ff0; display: none;" href="#">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                        <a class="nav_btn" href="#">
+                            <div><img style="border-radius: 50px;" width="35" src="profile-pix/mypix.jpg" alt="pix"></div>
+                        </a>
+                        <a class="post-heading-link" href="#">
+                        <h3>Home</h3>
+                        <div>
+                            <button class=" style="text-align: center;">For You</button>
+                            <button style="text-align: center;">Following</button>
+                            <button style="text-align: center;">Developers</button>
+                        </div>
+                        </a>
                     </div>
 
                     <div class="hidden">
@@ -111,310 +123,289 @@
                             <div class="everyone">
                                 Everyone can reply
                             </div>
+                            <div class="icons">
+                                <div>
+                                    <i class="fa-solid fa-photo-film"></i>
+                                    <i class="fa-solid fa-bars-progress"></i>
+                                    <i class="fa-solid fa-face-smile"></i>
+                                    <i class="fa-solid fa-calendar-plus"></i>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div class="main-btn">
+                                    <button>Tweet</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="border"></div>
-                    <div class="icons">
-                        <div>
-                            <i class="fa-solid fa-photo-film"></i>
-                            <i class="fa-solid fa-bars-progress"></i>
-                            <i class="fa-solid fa-face-smile"></i>
-                            <i class="fa-solid fa-calendar-plus"></i>
-                            <i class="fa-solid fa-location-dot"></i>
-                        </div>
-                        <div class="main-btn">
-                            <button>Tweet</button>
-                        </div>
-                    </div>
-               
-                    <div class="show-tweet">
-                        Show 560 Tweets
-                    </div>
 
-                    <article id="contents">
-                        <div class="logo">
-                            <img src="profile-pix/web3bridge.jpg" alt="pix">
-                        </div>
-                        <div class="packages">
-                            <div class="line1">
-                                <p><a href="#">ebunayo.eth</a></p>
-                                <p class="unique-name"> @Ebunayo08</p>
-                                <p class="unique-name">&#183; 16h</p>
-                                <p id="new4">...</p>
+                    <div class="body-user-post">
+                        <a class="tweet-num" href="#"> Show 560 Tweets</a>
+                        <a class="user-post" href="#">
+                            <div class="post-user-img">
+                                <img style="border-radius: 50px;" width="50" src="profile-pix/web3bridge.jpg" alt="img">
                             </div>
-                            <div class="line2">
-                                Lagos to Ife and back! First event of the year done. <a style="color:  rgba(29, 155, 240);" href="#">@michaeljerryO</a> and his team did a good job organizing "Blochain and Business", We need to consciously groom the group of web3 founders to ensure sustainable adoption
-                                <div>
-                                    <img class="reduce" src="img/web3bridge.jfif" alt="pix">
+                            <div class="flex_">
+                                <div style="display: flex; justify-content: space-between;">
+                                    <div class="overflow">
+                                        <button class="upn upn_">ebunayo.eth</button>
+                                        <button class="upn">@Ebunayo08</button>
+                                        <span class="upn">&centerdot;</span>
+                                        <button class="upn upn_">14h</button>
+                                    </div>
+                                    <button style="background: none; color: #e7e9ea; border: none;"><i  class="ri-more-fill i__"></i></button>
+                                </div>
+                                <p>
+                                     Lagos to Ife and back! First event of the year done.@michaeljerryO and his team did a good job organizing "Blockchain and Business", We need to consciously groom the group of web3 founders to ensure sustainable adoption
+                                </p>
+                                <img style=" width: 100%; border-radius: 10px;" src="img/web3bridge.jfif" alt="img">
+                                <div class="hll_cover" style="display: flex; justify-content: space-between; padding-right: 2rem;">
+                                    <button class="hll">
+                                        <i class="ri-chat-1-line"></i>
+                                    </button>
+                                    <button class="hll hll_retweet">
+                                        <i class="ri-repeat-line"></i>
+                                        <span>67</span>
+                                    </button>
+                                    <button class="hll hll_love">
+                                        <i class="ri-heart-3-line"></i>
+                                        <span>24</span>
+                                    </button>
+                                    <button class="hll">
+                                        <i class="ri-bar-chart-line"></i>
+                                        <span>14.6k</span>
+                                    </button>
+                                    <button class="hll">
+                                        <i class="ri-upload-2-line"></i>
+                                    </button>
+                                   
                                 </div>
                             </div>
-                            <div class="line3">
-                                <button class="react">
-                                    <i class="fa-solid fa-comment"></i>
-                                    <span>117</span>
-                                </button>
-                                <button class="react">
-                                    <i class="fa-solid fa-retweet"></i>
-                                    <span>22</span>
-                                </button>
-                                <button class="react">
-                                    <i class="fa-solid fa-heart"></i>
-                                    <span>314</span>
-                                </button>
-                                <button class="react">
-                                    <i class="fa-solid fa-square-poll-vertical"></i>
-                                    <span>61.2k</span>
-                                </button>
-                                <button class="react">
-                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
-                                    <span></span>
-                                </button>
-                               
-                            </div>      
-                        </div>
-                    </article>
-
-                    <article id="contents">
-                        <div class="logo">
-                            <img src="profile-pix/dyanmite.jpg" alt="pix">
-                        </div>
-                        <div class="packages">
-                            <div class="line1">
-                                <p><a href="#">0xdynamite</a></p>
-                                <p class="unique-name"> @tecchDynamite235</p>
-                                <p class="unique-name">&#183; 18h</p>
-                                <p id="new5">...</p>
+                        </a>
+                        
+                        <a class="user-post" href="#">
+                            <div class="post-user-img">
+                                <img style="border-radius: 50px;" width="50" src="profile-pix/google.png" alt="img">
                             </div>
-                            <p class="line2">
-                                As a developer it is really neccessary to know Git and have a GITHUB account 🙃
-                            </p>
-                            <div class="line3">
-                                <button class="react">
-                                    <i class="fa-solid fa-comment"></i>
-                                    <span>6</span>
-                                </button>
-                                <button class="react">
-                                    <i class="fa-solid fa-retweet"></i>
-                                    <span>3</span>
-                                </button>
-                                <button class="react">
-                                    <i class="fa-solid fa-heart"></i>
-                                    <span>33</span>
-                                </button>
-                                <button class="react">
-                                    <i class="fa-solid fa-square-poll-vertical"></i>
-                                    <span>1,191</span>
-                                </button>
-                                <button class="react">
-                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
-                                    <span></span>
-                                </button>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article id="contents">
-                        <div class="logo">
-                            <img src="profile-pix/dailytrustmoney.jpg" alt="pix">
-                        </div>
-                        <div class="packages">
-                            <div class="line1">
-                                <p><a href="#">Daily Trust</a></p>
-                                <p class="unique-name"> @daily_trust</p>
-                                <p class="unique-name">&#183; 4h</p>
-                                <p id="new4">...</p>
-                            </div>
-                            <div class="line2">
-                                Have you been able to use old Naira notes for your transactions after <br> February 10?
-                                <div>
-                                    <img class="reduce" src="img/money.jfif" alt="money">
+                            <div class="flex_">
+                                <div style="display: flex; justify-content: space-between;">
+                                    <div class="overflow">
+                                        <button class="upn upn_">Google Developers Groups</button>
+                                        <button class="upn">@googledevgroups</button>
+                                        <span class="upn">&centerdot;</span>
+                                        <button class="upn upn_">Feb 10</button>
+                                    </div>
+                                    <button style="background: none; color: #e7e9ea; border: none;"><i  class="ri-more-fill i__"></i></button>
+                                </div>
+                                <p>
+                                    What is the best piece of career advice that you've ever recieved? 
+                                </p>
+                                <div class="hll_cover" style="display: flex; justify-content: space-between; padding-right: 2rem;">
+                                    <button class="hll">
+                                        <i class="ri-chat-1-line"></i>
+                                    </button>
+                                    <button class="hll hll_retweet">
+                                        <i class="ri-repeat-line"></i>
+                                        <span>67</span>
+                                    </button>
+                                    <button class="hll hll_love">
+                                        <i class="ri-heart-3-line"></i>
+                                        <span>24</span>
+                                    </button>
+                                    <button class="hll">
+                                        <i class="ri-bar-chart-line"></i>
+                                        <span>14.6k</span>
+                                    </button>
+                                    <button class="hll">
+                                        <i class="ri-upload-2-line"></i>
+                                    </button>
+                                   
                                 </div>
                             </div>
-                            <div class="line3">
-                                <button class="react">
-                                    <i class="fa-solid fa-comment"></i>
-                                    <span>117</span>
-                                </button>
-                                <button class="react">
-                                    <i class="fa-solid fa-retweet"></i>
-                                    <span>22</span>
-                                </button>
-                                <button class="react">
-                                    <i class="fa-solid fa-heart"></i>
-                                    <span>314</span>
-                                </button>
-                                <button class="react">
-                                    <i class="fa-solid fa-square-poll-vertical"></i>
-                                    <span>61.2k</span>
-                                </button>
-                                <button class="react">
-                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
-                                    <span></span>
-                                </button>
+                        </a>
+                        <a class="user-post" href="#">
+                            <div class="post-user-img">
+                                <img style="border-radius: 50px;" width="50" src="profile-pix/dyanmite.jpg" alt="img">
                             </div>
-                        </div>
-                    </article>
-                    
-                    <article id="contents">
-                        <div class="logo">
-                            <img src="profile-pix/danny.jpg" alt="pix">
-                        </div>
-                        <div class="packages">
-                            <div class="line1">
-                                <p><a href="#">Danny Thompson</a></p>
-                                <p class="unique-name"> @DThompsonDev</p>
-                                <p class="unique-name">&#183; 14h</p>
-                                <p id="new1">...</p>
+                            <div class="flex_">
+                                <div style="display: flex; justify-content: space-between;">
+                                    <div class="overflow">
+                                        <button class="upn upn_">0xdynamite</button>
+                                        <button class="upn">@tecchDynamite235</button>
+                                        <span class="upn">&centerdot;</span>
+                                        <button class="upn upn_">18h</button>
+                                    </div>
+                                    <button style="background: none; color: #e7e9ea; border: none;"><i  class="ri-more-fill i__"></i></button>
+                                </div>
+                                <p>
+                                    As a developer it is really neccessary to know Git and have a GITHUB account 🙃 
+                                </p>
+                                <div class="hll_cover" style="display: flex; justify-content: space-between; padding-right: 2rem;">
+                                    <button class="hll">
+                                        <i class="ri-chat-1-line"></i>
+                                    </button>
+                                    <button class="hll hll_retweet">
+                                        <i class="ri-repeat-line"></i>
+                                        <span>67</span>
+                                    </button>
+                                    <button class="hll hll_love">
+                                        <i class="ri-heart-3-line"></i>
+                                        <span>24</span>
+                                    </button>
+                                    <button class="hll">
+                                        <i class="ri-bar-chart-line"></i>
+                                        <span>14.6k</span>
+                                    </button>
+                                    <button class="hll">
+                                        <i class="ri-upload-2-line"></i>
+                                    </button>
+                                   
+                                </div>
                             </div>
-                            <p class="line2">
-                                What earbuds do you use to go to the gym that has survived all the sweat? <br> <br>
-                                I KEEP sweating through these earbuds and i know there gas to be a better solution.Feels like every few months I have to spend money on new earbuds
-                            </p>
-                            <div class="line3">
-                                <button class="react">
-                                    <i class="fa-solid fa-comment"></i>
-                                    <span>60</span>
-                                </button>
-                                <button class="react">
-                                    <i class="fa-solid fa-retweet"></i>
-                                    <span>4</span>
-                                </button>
-                                <button class="react">
-                                    <i class="fa-solid fa-heart"></i>
-                                    <span>62</span>
-                                </button>
-                                <button class="react">
-                                    <i class="fa-solid fa-square-poll-vertical"></i>
-                                    <span>39.4k</span>
-                                </button>
-                                <button class="react">
-                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
-                                    <span></span>
-                                </button>
+                        </a>
+                        <a class="user-post" href="#">
+                            <div class="post-user-img">
+                                <img style="border-radius: 50px;" width="50" src="profile-pix/dailytrustmoney.jpg" alt="img">
                             </div>
-                        </div>
-                    </article>
-
-                    <article id="contents">
-                        <div class="logo">
-                            <img src="profile-pix/pulse.jpg" alt="pix">
-                        </div>
-                        <div class="packages">
-                            <div class="line1">
-                                <p><a href="#">Pulse Nigeria</a></p>
-                                <p class="unique-name"> @PulseNigeria247</p>
-                                <p class="unique-name">&#183; Feb 11</p>
-                                <p id="new1">...</p>
+                            <div class="flex_">
+                                <div style="display: flex; justify-content: space-between;">
+                                    <div class="overflow">
+                                        <button class="upn upn_">daily_trust</button>
+                                        <button class="upn">@daily_trust</button>
+                                        <span class="upn">&centerdot;</span>
+                                        <button class="upn upn_">4h</button>
+                                    </div>
+                                    <button style="background: none; color: #e7e9ea; border: none;"><i  class="ri-more-fill i__"></i></button>
+                                </div>
+                                <p>
+                                    Have you been able to use old Naira notes for your transactions after February 10? 
+                                </p>
+                                <img style="width: 100%; border-radius: 10px;" src="img/money.jfif" alt="img">
+                                <div class="hll_cover" style="display: flex; justify-content: space-between; padding-right: 2rem;">
+                                    <button class="hll">
+                                        <i class="ri-chat-1-line"></i>
+                                    </button>
+                                    <button class="hll hll_retweet">
+                                        <i class="ri-repeat-line"></i>
+                                        <span>67</span>
+                                    </button>
+                                    <button class="hll hll_love">
+                                        <i class="ri-heart-3-line"></i>
+                                        <span>24</span>
+                                    </button>
+                                    <button class="hll">
+                                        <i class="ri-bar-chart-line"></i>
+                                        <span>14.6k</span>
+                                    </button>
+                                    <button class="hll">
+                                        <i class="ri-upload-2-line"></i>
+                                    </button>
+                                   
+                                </div>
                             </div>
-                            <div class="line2">
-                                🤔🤔
-                                <div><img class="reduce" src="img/pulse.jfif" alt="pix"></div>
+                        </a>
+                        <a class="user-post" href="#">
+                            <div class="post-user-img">
+                                <img style="border-radius: 50px;" width="50" src="profile-pix/perfection.jpg" alt="img">
                             </div>
-                            <div class="line3">
-                                <button class="react">
-                                    <i class="fa-solid fa-comment"></i>
-                                    <span>4,207</span>
-                                </button>
-                                <button class="react">
-                                    <i class="fa-solid fa-retweet"></i>
-                                    <span>622</span>
-                                </button>
-                                <button class="react">
-                                    <i class="fa-solid fa-heart"></i>
-                                    <span>9,168</span>
-                                </button>
-                                <button class="react">
-                                    <i class="fa-solid fa-square-poll-vertical"></i>
-                                    <span>634k</span>
-                                </button>
-                                <button class="react">
-                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
-                                    <span></span>
-                                </button>
-                               
+                            <div class="flex_">
+                                <div style="display: flex; justify-content: space-between;">
+                                    <div class="overflow">
+                                        <button class="upn upn_">Perfection Loveday</button>
+                                        <button class="upn">@opensaucerer</button>
+                                        <span class="upn">&centerdot;</span>
+                                        <button class="upn upn_">13h</button>
+                                    </div>
+                                    <button style="background: none; color: #e7e9ea; border: none;"><i  class="ri-more-fill i__"></i></button>
+                                </div>
+                                <p>
+                                    Hold me tight and kiss me right as I ripple along the colorful waves of your love <br><br>@opensaucerer
+                                </p>
+                                <div class="hll_cover" style="display: flex; justify-content: space-between; padding-right: 2rem;">
+                                    <button class="hll">
+                                        <i class="ri-chat-1-line"></i>
+                                    </button>
+                                    <button class="hll hll_retweet">
+                                        <i class="ri-repeat-line"></i>
+                                        <span>67</span>
+                                    </button>
+                                    <button class="hll hll_love">
+                                        <i class="ri-heart-3-line"></i>
+                                        <span>24</span>
+                                    </button>
+                                    <button class="hll">
+                                        <i class="ri-bar-chart-line"></i>
+                                        <span>14.6k</span>
+                                    </button>
+                                    <button class="hll">
+                                        <i class="ri-upload-2-line"></i>
+                                    </button>
+                                   
+                                </div>
                             </div>
-                        </div>
-                    </article>
-
-                    <article id="contents">
-                        <div class="logo">
-                            <img src="profile-pix/perfection.jpg" alt="pix">
-                        </div>
-                        <div class="packages">
-                            <div class="line1">
-                                <p><a href="#">Perfection Loveday</a></p>
-                                <p class="unique-name"> @opensaucerer</p>
-                                <p class="unique-name">&#183; 13h</p>
-                                <p id="new2">...</p>
+                        </a>
+                        <a class="user-post" href="#">
+                            <div class="post-user-img">
+                                <img style="border-radius: 50px;" width="50" src="profile-pix/danny.jpg" alt="img">
                             </div>
-                            <p class="line2">
-                                Hold me tight and kiss me right as I ripple along the colorful waves of your love <br><br>
-                                <a style=" color:rgba(29, 155, 240)" href="#">@opensaucerer</a>
-                            </p>
-                            <div class="line3">
-                                <button class="react">
-                                    <i class="fa-solid fa-comment"></i>
-                                    <span>4</span>
-                                </button>
-                                <button class="react">
-                                    <i class="fa-solid fa-retweet"></i>
-                                    <span></span>
-                                </button>
-                                <button class="react">
-                                    <i class="fa-solid fa-heart"></i>
-                                    <span>6</span>
-                                </button>
-                                <button class="react">
-                                    <i class="fa-solid fa-square-poll-vertical"></i>
-                                    <span>134</span>
-                                </button>
-                                <button class="react">
-                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
-                                    <span></span>
-                                </button>
-                               
+                            <div class="flex_">
+                                <div style="display: flex; justify-content: space-between;">
+                                    <div class="overflow">
+                                        <button class="upn upn_">Danny Thompson</button>
+                                        <button class="upn">@DThompsonDev</button>
+                                        <span class="upn">&centerdot;</span>
+                                        <button class="upn upn_">Feb 10</button>
+                                    </div>
+                                    <button style="background: none; color: #e7e9ea; border: none;"><i  class="ri-more-fill i__"></i></button>
+                                </div>
+                                <p>
+                                    What earbuds do you use to go to the gym that has survived all the sweat? <br><br> I KEEP sweating through these earbuds and i know there gas to be a better solution.Feels like every few months I have to spend money on new earbuds 
+                                </p>
+                                <div class="hll_cover" style="display: flex; justify-content: space-between; padding-right: 2rem;">
+                                    <button class="hll">
+                                        <i class="ri-chat-1-line"></i>
+                                    </button>
+                                    <button class="hll hll_retweet">
+                                        <i class="ri-repeat-line"></i>
+                                        <span>67</span>
+                                    </button>
+                                    <button class="hll hll_love">
+                                        <i class="ri-heart-3-line"></i>
+                                        <span>24</span>
+                                    </button>
+                                    <button class="hll">
+                                        <i class="ri-bar-chart-line"></i>
+                                        <span>14.6k</span>
+                                    </button>
+                                    <button class="hll">
+                                        <i class="ri-upload-2-line"></i>
+                                    </button>
+                                   
+                                </div>
                             </div>
-                        </div>
-                    </article>
-
-                    <article id="contents">
-                        <div class="logo">
-                            <img src="profile-pix/google.png" alt="pix">
-                        </div>
-                        <div class="packages">
-                            <div class="line1">
-                                <p><a href="#">Google Developers Groups</a></p>
-                                <p class="unique-name"> @googledevgroups</p>
-                                <p class="unique-name">&#183; Feb 10</p>
-                                <p id="new3">...</p>
-                            </div>
-                            <p class="line2">
-                                What is the best piece of career advice that you've ever recieved?
-                            </p>
-                            <div class="line3">
-                                <button class="react">
-                                    <i class="fa-solid fa-comment"></i>
-                                    <span>67</span>
-                                </button>
-                                <button class="react">
-                                    <i class="fa-solid fa-retweet"></i>
-                                    <span>13</span>
-                                </button>
-                                <button class="react">
-                                    <i class="fa-solid fa-heart"></i>
-                                    <span>47</span>
-                                </button>
-                                <button class="react">
-                                    <i class="fa-solid fa-square-poll-vertical"></i>
-                                    <span>14.6k</span>
-                                </button>
-                                <button class="react">
-                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
-                                    <span></span>
-                                </button>
-                            </div>
-                        </div>
-                    </article>
+                        </a>
+                        <div class="break"><br><br><br></div>
+                    </div>
+                    <a href="#" class="tweet_nav">
+                        <img width="120" style="border-radius: 50px;" src="img/create.png" alt="img">
+                    </a>
+                    <div class="fixed_menu">
+                        <a class="sidebar_link active" href="#">
+                            <i class="fa-solid fa-house"></i>
+                        </a>
+                        <a class="sidebar_link" href="#">
+                            <i class="fa-solid fa-magnifying-glass none_search"></i>
+                        </a>
+                        <a class="sidebar_link" href="#">
+                            <i class="fa-solid fa-user-group"></i>
+                        </a>
+                        <a class="sidebar_link" href="#">
+                            <i id="notify" class="fa-solid fa-bell"></i> 
+                        </a>
+                        <a class="sidebar_link" href="#">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
                 </div>
                                                                 
                                                                 <!--  RIGHT SECTION -->

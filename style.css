@@ -166,7 +166,7 @@ i{
     height: 7rem;
     top: 0;
     bottom: 0;
-    width: 37.7rem;
+    width: 37rem;
     padding-top: 0;
     padding-bottom: 0;
     background-color: #000000a8;
@@ -632,7 +632,7 @@ text-decoration: none;
         margin-left: 4rem;
     }
     .post-heading{
-        width: 527px;
+        width: 518px;
     }
     .centre,
     .dot{
@@ -664,7 +664,7 @@ text-decoration: none;
         display: none;
     }
     .post-heading{
-        width: 620px;
+        width: 610px;
     }
   
    

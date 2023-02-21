@@ -34,9 +34,9 @@ HTML
 CSS
 
 ### Contact
-Twitter: https://twitter.com/IgweHenr1
+Twitter: https://twitter.com/henryIgweDev
 
-LinkedIn : https://linkedin.com/in/henryigwe
+LinkedIn : https://linkedin.com/in/henryigwedev
 
 Projectlink: https://twitterhomepage1212.netlify.app//
 
